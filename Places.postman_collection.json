@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "a5492f42-1850-423b-9ed7-422de61fe7cf",
+		"name": "Places",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38617670"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/place/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"place",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/place/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"place",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \r\n        \"name\": \"Bar El asdadadasdadad\",\r\n        \"address\": \"Calle San Eloy, 3\",\r\n        \"location\": \"37.3924,-5.9841\",\r\n        \"description\": \"Bar de tapas y desayunos\",\r\n        \"tags\": [],\r\n        \"image\": \"https://www.baresyrestaurantes.es/wp-content/uploads/2019/07/Bar-El-Comercio.jpg\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/place/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"place",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Bar El Comercio\",\r\n    \"address\": \"Calle San Eloy, 9999999999999999999\",\r\n    \"location\": \"37.3924,-5.9841\",\r\n    \"description\": \"Bar de tapas y desayunos\",\r\n    \"tags\": [],\r\n    \"image\": \"https://www.baresyrestaurantes.es/wp-content/uploads/2019/07/Bar-El-Comercio.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/place/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"place",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
